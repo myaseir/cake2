@@ -83,57 +83,47 @@ export default function Navbar() {
       </div>
 
       {/* 5. Fullscreen Mobile Menu Overlay - Warm Bakery Theme */}
-      <div 
-        className={`fixed inset-0 bg-[#FCFAFB] z-[105] transition-all duration-500 ease-in-out md:hidden flex flex-col items-center justify-center ${
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
-      >
-        <nav className="relative z-10 flex flex-col items-center gap-8 text-center">
-          
-          <div className={`transition-all duration-700 delay-100 ${isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}>
-            <Link href="/" onClick={closeMenu} className="text-[10px] tracking-[0.5em] uppercase font-bold text-stone-400">
-              Home
-            </Link>
-          </div>
+    {/* 5. Compact Mobile Menu Drop-down */}
+<div 
+  className={`fixed left-0 right-0 top-0 w-full bg-[#FCFAFB] z-[90] shadow-xl transition-all duration-500 ease-in-out md:hidden border-b border-stone-100 ${
+    isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
+  }`}
+  style={{ height: 'auto' }} 
+>
+  {/* Padding-top is large (8rem) to stay below your logo/header toggle */}
+  <nav className="flex flex-col items-center gap-4 py-8 pt-24 pb-10">
+    
+    <Link href="/" onClick={closeMenu} className="text-[9px] tracking-[0.4em] uppercase font-bold text-stone-400">
+      Home
+    </Link>
 
-          <div className={`transition-all duration-700 delay-200 ${isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}>
-            <Link href="/menu" onClick={closeMenu} className="text-4xl tracking-tight font-serif italic text-stone-900 hover:text-amber-800 transition-colors">
-              The Cake Menu
-            </Link>
-          </div>
+    <Link href="/menu" onClick={closeMenu} className="text-[10px] tracking-[0.3em] uppercase font-bold text-stone-900">
+      The Menu
+    </Link>
 
-          <div className={`transition-all duration-700 delay-300 ${isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}>
-            <Link href="/weddings" onClick={closeMenu} className="text-4xl tracking-tight font-serif italic text-stone-900 hover:text-amber-800 transition-colors">
-              Wedding Tiers
-            </Link>
-          </div>
+    <Link href="/weddings" onClick={closeMenu} className="text-[10px] tracking-[0.3em] uppercase font-bold text-stone-900">
+      Weddings
+    </Link>
 
-          <div className={`transition-all duration-700 delay-400 ${isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}>
-            <Link href="/about" onClick={closeMenu} className="text-4xl tracking-tight font-serif italic text-stone-900 hover:text-amber-800 transition-colors">
-              Our Craft
-            </Link>
-          </div>
+    <Link href="/about" onClick={closeMenu} className="text-[10px] tracking-[0.3em] uppercase font-bold text-stone-900">
+      Our Story
+    </Link>
 
-          <div className={`transition-all duration-700 delay-500 ${isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0"}`}>
-            <Link 
-              href="https://wa.me/923335539381"
-              target="_blank"
-              onClick={closeMenu}
-              className="mt-6 px-12 py-5 bg-amber-900 text-white text-[11px] tracking-[0.4em] uppercase font-bold hover:bg-stone-900 transition-all shadow-xl active:scale-95"
-            >
-              WhatsApp Order
-            </Link>
-          </div>
-        </nav>
-        
-        {/* Subtle Brand Quote */}
-        <div className={`absolute bottom-12 flex flex-col items-center gap-2 transition-opacity duration-1000 ${isOpen ? "opacity-100" : "opacity-0"}`}>
-          <div className="h-[1px] w-8 bg-stone-200"></div>
-          <span className="text-[9px] tracking-[0.3em] text-stone-400 uppercase italic">
-            Handcrafted in Rawalpindi
-          </span>
-        </div>
-      </div>
+    <Link 
+      href="https://wa.me/923335539381"
+      target="_blank"
+      onClick={closeMenu}
+      className="mt-2 px-6 py-2 bg-stone-900 text-white text-[9px] tracking-[0.3em] uppercase font-bold"
+    >
+      Order Now
+    </Link>
+
+    {/* Small Location Tag to keep it boutique */}
+    <span className="mt-4 text-[8px] tracking-[0.2em] text-stone-300 uppercase">
+      Rawalpindi
+    </span>
+  </nav>
+</div>
     </nav>
   );
 }
