@@ -69,7 +69,7 @@ export default function Home() {
           href="https://wa.me/923335539381"
           className="inline-block px-12 py-5 bg-white text-stone-900 text-[11px] tracking-[0.4em] uppercase font-bold hover:bg-amber-100 transition-all shadow-2xl"
         >
-          Contact Kalsoom
+          Contact {process.env.NAME}
         </a>
       </section>
     </main>

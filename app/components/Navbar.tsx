@@ -46,8 +46,8 @@ export default function Navbar() {
               onClick={closeMenu}
               className="text-2xl md:text-3xl font-serif tracking-tight text-stone-900 transition-opacity hover:opacity-80 flex flex-col items-center leading-none"
             >
-              <span className="text-[10px] tracking-[0.5em] uppercase font-sans mb-1 text-stone-400">Cakes By</span>
-              <span className="italic">Kalsoom</span>
+              {/* <span className="text-[10px] tracking-[0.5em] uppercase font-sans mb-1 text-stone-400">Cakes By</span> */}
+             <span className="italic">{process.env.NAME}</span>
             </Link>
           </div>
 

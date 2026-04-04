@@ -12,7 +12,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Cakes By Kalsoom | Bespoke Luxury Cakes Rawalpindi",
+  title: "Best Cake| Bespoke Luxury Cakes Rawalpindi",
   description: "Artisanal custom cakes, wedding desserts, and gourmet treats in Rawalpindi. Handcrafted with love and the finest ingredients.",
 };
 

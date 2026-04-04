@@ -68,7 +68,7 @@ export default function AboutPage() {
             className="flex flex-col items-start"
           >
             <h4 className="text-amber-900 text-[11px] tracking-[0.3em] uppercase font-bold mb-4">
-              The Kalsoom Philosophy
+              The {process.env.NAME} Philosophy
             </h4>
             <h2 className="text-4xl md:text-5xl font-serif text-stone-900 mb-8 italic leading-tight">
               Flavor, Texture & <br/> Artistic Vision
@@ -76,7 +76,7 @@ export default function AboutPage() {
             
             <div className="space-y-6 text-stone-600 font-light text-lg leading-relaxed">
               <p>
-                Cakes By Kalsoom is an exclusive boutique kitchen where we focus on the intersection of fine art and high-end baking. We believe every celebration deserves a centerpiece that tastes as extraordinary as it looks.
+                {process.env.NAME} is an exclusive boutique kitchen where we focus on the intersection of fine art and high-end baking. We believe every celebration deserves a centerpiece that tastes as extraordinary as it looks.
               </p>
               <p>
                 From the delicate placement of hand-crafted sugar flowers to the rich, balanced profiles of our signature sponges, our process is defined by patience and panache. We don't just bake; we design edible legacies for your most cherished moments.
@@ -109,7 +109,7 @@ export default function AboutPage() {
           >
             "A cake is more than a dessert—it is the final note of a beautiful story."
           </motion.p>
-          <span className="text-[10px] tracking-[0.5em] uppercase text-amber-900 font-bold">Kalsoom’s Promise</span>
+          <span className="text-[10px] tracking-[0.5em] uppercase text-amber-900 font-bold">{process.env.NAME}’s Promise</span>
         </div>
       </section>
     </main>

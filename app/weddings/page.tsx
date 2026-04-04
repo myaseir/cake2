@@ -163,7 +163,7 @@ export default function BridalPage() {
       {/* Refined Footer */}
       <footer className="pb-20 text-center border-t border-stone-100 pt-12 mx-12">
         <p className="text-[9px] tracking-[0.6em] uppercase text-stone-400">
-          Cakes By Kalsoom <span className="mx-4 text-stone-200">|</span> 
+          {process.env.NAME} <span className="mx-4 text-stone-200">|</span> 
           Rawalpindi / Islamabad <span className="mx-4 text-stone-200">|</span> 
           By Appointment Only
         </p>

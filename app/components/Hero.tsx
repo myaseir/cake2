@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="relative z-20 flex flex-col items-center text-center px-6">
         <h1 className="text-[12vw] md:text-[8rem] font-serif text-white leading-none tracking-tighter mb-4 animate-fade-in drop-shadow-lg">
-          Cakes By <span className="italic block md:inline">Kalsoom</span>
+          <span className="italic block md:inline">{process.env.NAME}</span>
         </h1>
         
         <div className="h-px w-12 md:w-24 bg-white mb-8 opacity-80"></div>
