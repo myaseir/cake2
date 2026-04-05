@@ -76,7 +76,7 @@ export default function ServicesPage() {
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 px-6 text-center border-b border-stone-100">
         <div className="max-w-4xl mx-auto">
           <span className="text-amber-800 text-[10px] md:text-xs tracking-[0.5em] font-bold uppercase mb-6 block">
-            The Kalsoom Standard
+            The Standard
           </span>
           <h1 className="text-5xl md:text-8xl font-serif text-stone-900 mb-8 italic tracking-tighter">
             Full Menu
